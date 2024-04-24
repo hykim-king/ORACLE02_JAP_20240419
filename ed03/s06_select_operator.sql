@@ -1,0 +1,10 @@
+SELECT ename
+  FROM emp
+ WHERE ename BETWEEN  'JAMES' AND 'MARTIN'
+;
+ENAME
+--------------------
+JONES
+MARTIN
+KING
+JAMES
