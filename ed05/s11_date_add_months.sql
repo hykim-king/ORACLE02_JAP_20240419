@@ -1,0 +1,8 @@
+SELECT SYSDATE,
+       ADD_MONTHS(SYSDATE,1),
+       ADD_MONTHS(SYSDATE,-2)
+  FROM dual
+;  
+SYSDATE  ADD_MONT ADD_MONT
+-------- -------- --------
+24/04/25 24/05/25 24/02/25

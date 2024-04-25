@@ -1,0 +1,19 @@
+-- SELECT SYSDATE
+--   FROM dual
+-- ;
+-- SYSDATE
+-- --------
+-- 24/04/25
+-- 2024-04-25 10:43:30
+
+--접속 SESSION에만 유효
+ALTER SESSION SET NLS_DATE_FORMAT='RRRR-MM-DD HH24:MI:SS';
+SELECT SYSDATE
+  FROM dual
+;
+세션이 변경되었습니다.
+
+
+SYSDATE
+-------------------
+2024-04-25 10:44:40

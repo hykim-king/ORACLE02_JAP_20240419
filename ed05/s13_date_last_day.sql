@@ -1,0 +1,5 @@
+SELECT SYSDATE,
+       LAST_DAY(SYSDATE),
+       LAST_DAY( ADD_MONTHS(SYSDATE,-2))
+  FROM dual
+;  
