@@ -1,0 +1,3 @@
+SELECT sal
+  FROM emp
+;  

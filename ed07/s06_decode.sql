@@ -1,0 +1,31 @@
+col deptno  for 999
+col name    for a20
+col "dname" for a25
+SELECT deptno,
+       name,
+       DECODE(deptno,101,'Computer Engineering'
+                    ,102,'Multimedia Engineering'
+                    ,103,'Software Engineering'
+                        ,'ETC') "dname"
+  FROM professor
+; 
+DEPTNO NAME                 dname
+------ -------------------- -------------------------
+   101 Audie Murphy         Computer Engineering
+   101 Angela Bassett       Computer Engineering
+   101 Jessica Lange        Computer Engineering
+   102 Winona Ryder         Multimedia Engineering
+   102 Michelle Pfeiffer    Multimedia Engineering
+   102 Whoopi Goldberg      Multimedia Engineering
+   103 Emma Thompson        Software Engineering
+   103 Julia Roberts        Software Engineering
+   103 Sharon Stone         Software Engineering
+   201 Meryl Streep         ETC
+   201 Susan Sarandon       ETC
+   202 Nicole Kidman        ETC
+   202 Holly Hunter         ETC
+   203 Meg Ryan             ETC
+   301 Andie Macdowell      ETC
+   301 Jodie Foster         ETC
+
+16 행이 선택되었습니다.
